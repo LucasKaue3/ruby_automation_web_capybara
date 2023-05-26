@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Cucumber Report Builder - Automated Sauce Demo</title>
+
+  <link rel="icon" href="https://reportbuilder.rajatthareja.com/rb.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection"/>
+  <link href="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.9/css/report.builder.min.css" rel="stylesheet">
+
+  
+</head>
+
+  <body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+<header class="indigo lighten-5">
+  <div class="row indigo lighten-1">
+    <div class="col m6 hide-on-small-only">
+      <h5 class="truncate white-text tooltipped" data-tooltip="Cucumber Report Builder - Automated Sauce Demo">Cucumber Report Builder - Automated Sauce Demo</h5>
+    </div>
+
+    <div class="col m6 s12 indigo lighten-1">
+      <ul class="tabs indigo lighten-1 row" style="overflow-x: hidden">
+        <li class="tab col s3">
+          <a class="indigo lighten-3 active blue-text waves-effect waves-light tooltipped" data-tooltip="Results Overview" href="#overview"><i class="material-icons">assessment</i> Overview</a>
+        </li>
+        <li class="tab col s3">
+          <a class="indigo lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios by Features" href="#features"><i class="material-icons">view_headline</i> Features</a>
+        </li>
+        <li class="tab col s3">
+          <a class="indigo lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios Summary Table" href="#summary"><i class="material-icons">view_comfy</i> Summary</a>
+        </li>
+        <li class="tab col s3">
+          <a class="indigo lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Failed Scenarios" href="#errors"><i class="material-icons">bug_report</i> Errors</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+    
+
+    
+    
+
+    
+    
+        
+        <div id="g0f0s0" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+
+    <h5>Create User Account (13.504s)</h5>
+    features/specs/sauce_demo.feature:3
+
+    
+        
+            
+
+
+
+
+
+        
+            
+
+
+
+
+
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Given </b> that navigating to the Sauce Demo site (0.312s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>And </b> that you login with the user &quot;standard_user&quot; (0.355s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>And </b> add a product to the cart (0.072s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>And </b> navigate to the shopping cart (0.077s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>And </b> check that the product has been successfully added (0.094s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>And </b> navigate to checkout (0.094s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>And </b> fill in your details and continue (1.804s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>And </b> validate the value of the product on the Checkout screen, Overview (0.046s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>And </b> validate that the total amount corresponds to the description on the page and complete the purchase (0.158s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step failed">
+  
+
+  <b>Then </b> complete the purchase and confirm that the purchase was successful (10.038s)
+
+  
+
+  
+
+  
+  
+  
+
+
+    
+    
+    
+    <pre>Confirmation message not found! (ArgumentError)
+./features/page/checkout_sauce_demo_page.rb:44:in `confirm_purchase_successful&#39;
+./features/step_definitions/checkout_sauce_demo_step.rb:14:in `&quot;complete the purchase and confirm that the purchase was successful&quot;&#39;
+features/specs/sauce_demo.feature:13:in `complete the purchase and confirm that the purchase was successful&#39;</pre>
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+
+
+    
+    
+    
+    <pre>undefined method `embed&#39; for #&lt;Object+PagesObjects+Capybara::RSpecMatchers+Capybara::DSLRSpecProxyInstaller+Capybara::DSL+RSpec::Matchers+Cucumber::Glue::ProtoWorld+#&lt;Module:0x0000022ce36d1228&gt;+PP::ObjectMixin+JSON::Ext::Generator::GeneratorMethods::Object+Kernel+:0xd750&gt; (NoMethodError)
+./features/support/hooks.rb:22:in `After&#39;</pre>
+
+
+
+
+        
+            
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        
+        $('#g0f0s0').modal();
+        
+        $('#g0f0s1').modal();
+        
+    });
+</script>
+
+
+    <main class="indigo lighten-5">
+      <div class="row">
+
+        <div id="overview" class="col s12 indigo lighten-5">
+          <div class="row">
+  <div class="col m4 s12">
+    <canvas id="featuresDoughnut" width="400" height="400"></canvas>
+    <table id="metaDataFeatures" class="bordered">
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="col m4 s12">
+    <canvas id="scenariosDoughnut" width="400" height="400"></canvas>
+    <table id="metaDataScenarios" class="bordered">
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="col m4 s12">
+    <table id="metaData" class="bordered">
+      <tbody>
+      <tr><th>Total Time</th><td>13.504s</td></tr>
+      
+          <tr>
+            <th>Project name</th>
+            <td>Team Ritain</td>
+          </tr>
+      
+          <tr>
+            <th>Platform</th>
+            <td>web/Api</td>
+          </tr>
+      
+          <tr>
+            <th>Report generated</th>
+            <td>2023-05-26 14:29:34 -0300</td>
+          </tr>
+      
+      </tbody>
+    </table>
+  </div>
+</div>
+
+        </div>
+
+        <div id="features" class="col s12 indigo lighten-5 white-text">
+          <ul class="featureList collapsible popout" data-collapsible="expandable">
+  
+      
+      <li class="feature broken">
+  <div class="collapsible-header indigo lighten-1 waves-effect waves-light">
+    <i class="material-icons">featured_play_list</i>
+    <b>Feature</b>&nbsp;Valid Registration - Sauce Demo&nbsp;(13.504s)
+  </div>
+
+  <div class="collapsible-body indigo lighten-4">
+    <div class="collection scenarioList indigo">
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text failed" href="#g0f0s0">
+          <b>Scenario</b> Create User Account&nbsp;(13.504s)
+        </a>
+      
+    </div>
+  </div>
+</li>
+
+  
+</ul>
+
+        </div>
+
+        <div id="summary" class="col s12 indigo lighten-5">
+          <table id="summaryTable" class="bordered indigo lighten-1 white-text" width="100%">
+  <thead>
+  <tr>
+    <th class="hide-on-small-only">Feature</th>
+    <th>Scenario</th>
+    <th class="hide">Tags</th>
+    <th>Status</th>
+
+
+    
+
+    <th class="hide-on-small-only">Error</th>
+  </tr>
+  </thead>
+  <tbody>
+  
+      
+          
+          <tr class="failed">
+            <td class="hide-on-small-only">
+  Valid Registration - Sauce Demo
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s0">
+  Create User Account
+</td>
+
+<td class="hide">
+  
+</td>
+
+<td class="uppercase">
+  failed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+      undefined method `embed&#39; for #&lt;Object+PagesObjects+Capybara::RSpecMatchers+Capybara::DSLRSpecProxyInstaller+Capybara::DSL+RSpec::Matchers+Cucumber::Glue::ProtoWorld+#&lt;Module:0x0000022ce36d1228&gt;+PP::ObjectMixin+JSON::Ext::Generator::GeneratorMethods::Object+Kernel+:0xd750&gt; (NoMethodError)
+  
+</td>
+
+          </tr>
+      
+  
+  </tbody>
+</table>
+
+        </div>
+
+        <div id="errors" class="col s12 indigo lighten-5">
+          <ul class="errorList collapsible popout" data-collapsible="expandable">
+  
+      <li class="error">
+  <div class="collapsible-header red lighten-2 white-text waves-effect waves-light">
+    <i class="material-icons">bug_report</i>Confirmation message not found! (ArgumentError)
+  </div>
+
+  <div class="collapsible-body indigo lighten-4">
+    <div class="collection failedScenarioList">
+      
+          
+              
+                  
+              
+          
+      
+    </div>
+  </div>
+</li>
+
+  
+      <li class="error">
+  <div class="collapsible-header red lighten-2 white-text waves-effect waves-light">
+    <i class="material-icons">bug_report</i>undefined method `embed&#39; for #&lt;Object+PagesObjects+Capybara::RSpecMatchers+Capybara::DSLRSpecProxyInstaller+Capybara::DSL+RSpec::Matchers+Cucumber::Glue::ProtoWorld+#&lt;Module:0x0000022ce36d1228&gt;+PP::ObjectMixin+JSON::Ext::Generator::GeneratorMethods::Object+Kernel+:0xd750&gt; (NoMethodError)
+  </div>
+
+  <div class="collapsible-body indigo lighten-4">
+    <div class="collection failedScenarioList">
+      
+          
+              
+                  
+                      <a class="collection-item failedScenario indigo lighten-5 red-text modal-trigger waves-effect waves-light" href="#g0f0s0">
+                        <i class="material-icons">highlight_off</i>&nbsp;Create User Account
+                      </a>
+                  
+              
+          
+      
+    </div>
+  </div>
+</li>
+
+  
+</ul>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer indigo lighten-4">
+  <div class="footer-copyright indigo lighten-1">
+    <div class="container">
+      Happy Reporting!
+      <a class="white-text text-lighten-4 right" href="https://reportbuilder.rajatthareja.com">Generated by Report Builder</a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.9/js/report.builder.min.js"></script>
+
+
+
+
+
+  </body>
+</html>
