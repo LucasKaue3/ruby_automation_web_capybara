@@ -26,7 +26,6 @@ class CheckoutSauceDemo < SitePrism::Page
   end
 
   def check_total_value
-    binding.pry
     value_summary_tax_label_price = value_summary_tax_label.text.gsub(/[^\d\.]/, '').to_f
     sum_total_value = value_summary_tax_label_price + $product_price_checkout
 
